@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			sans: ['Inter', 'Arial', 'sans-serif'], // Custom default sans-serif
+			serif: ['Georgia', 'serif'],           // Custom serif
+			mono: ['Fira Code', 'monospace'],      // Custom monospace
+			custom: ['"Your Custom Font"', 'sans-serif'], // Add any other custom font
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
