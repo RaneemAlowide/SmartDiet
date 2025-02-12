@@ -5,14 +5,19 @@ import Navbar from "@/components/ui/Navigation/Navbar"
 import Footer from "@/components/ui/Navigation/Footer"
 import ContactInfo from "@/components/ui/LandingPage/ContactInfo"
 import FeatureCards from "@/components/ui/LandingPage/FeatureCards"
+import HeroComponent from "@/components/ui/LandingPage/HeroComponent"
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)]">
       <Navbar />
       <main className="flex-1">
+
+     
+
         {/* Features Section */}
-        <section className="py-20">
+        <section className="">
+        <HeroComponent />
           <FeatureCards />
         </section>
         {/* Contact Section */}
