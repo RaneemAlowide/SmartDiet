@@ -6,7 +6,8 @@ import Footer from "@/components/ui/Navigation/Footer"
 import ContactInfo from "@/components/ui/LandingPage/ContactInfo"
 import FeatureCards from "@/components/ui/LandingPage/FeatureCards"
 import HeroComponent from "@/components/ui/LandingPage/HeroComponent"
-
+import ServicesSection from "@/components/ui/LandingPage/ServicesSection"
+import ServicesSection2 from"@/components/ui/LandingPage/ServicesCard"
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)]">
@@ -19,26 +20,13 @@ export default function Home() {
         <section className="">
         <HeroComponent />
           <FeatureCards />
+          <ServicesSection />
         </section>
         {/* Contact Section */}
         <section className="bg-[#EFEDE9] p-10">
           <ContactInfo />
         </section>
 
-
-
-        {/* Call to Action */}
-        <section className="py-20 gradient-bg text-white">
-          <div className="container text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Start Your Journey?</h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Take the first step towards a healthier lifestyle with Smart Diet Center
-            </p>
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
-              <Link href="/contact">Contact Us Today</Link>
-            </Button>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
