@@ -7,7 +7,10 @@ import ContactInfo from "@/components/ui/LandingPage/ContactInfo"
 import FeatureCards from "@/components/ui/LandingPage/FeatureCards"
 import HeroComponent from "@/components/ui/LandingPage/HeroComponent"
 import ServicesSection from "@/components/ui/LandingPage/ServicesSection"
-import ServicesSection2 from"@/components/ui/LandingPage/ServicesCard"
+import ProfileCard from "@/components/ui/LandingPage/ProfileCard"
+import TestimonialSlider from "@/components/ui/LandingPage/TestimonialSlider"
+import BackgroundWrapper from "@/components/BackgroundWrapper"
+import FAQ from "@/components/ui/LandingPage/FAQ"
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-[family-name:var(--font-geist-sans)]">
@@ -21,6 +24,11 @@ export default function Home() {
         <HeroComponent />
           <FeatureCards />
           <ServicesSection />
+          <BackgroundWrapper>
+            <ProfileCard />
+            < TestimonialSlider />
+          </BackgroundWrapper>
+          < FAQ />
         </section>
         {/* Contact Section */}
         <section className="bg-[#EFEDE9] p-10">
